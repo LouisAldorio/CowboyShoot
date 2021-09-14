@@ -21,7 +21,9 @@
         android:src="@drawable/ic_arrow_up"
         android:layout_marginBottom="@dimen/_16sdp"
         android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_80sdp" />
+        android:clickable="true"
+        android:layout_height="@dimen/_80sdp"
+        android:focusable="true" />
 
     <ImageView
         android:id="@+id/iv_arrow_down"
@@ -30,6 +32,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_arrow_up"
         android:src="@drawable/ic_arrow_down"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp" />
 
@@ -43,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:textAlignment="center"
         android:gravity="center"
-        android:text="@string/text_restart"
+        android:text="@string/text_shoot"
         style="@style/Text.32.Black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_arrow_down"/>
